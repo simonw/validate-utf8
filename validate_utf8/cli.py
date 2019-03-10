@@ -3,6 +3,7 @@ from validate_utf8 import find_utf8_errors
 
 
 @click.command()
+@click.version_option()
 @click.argument(
     "path",
     type=click.Path(exists=True, file_okay=True, dir_okay=False, allow_dash=False),
